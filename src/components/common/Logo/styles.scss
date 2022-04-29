@@ -1,0 +1,18 @@
+.logo {
+    width: fit-content;
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    flex-shrink: 0;
+    &-head {
+        display: flex;
+        align-items: center;
+    }
+    &-img {
+        width: 1.5rem;
+        margin-right: 0.4rem;
+    }
+    &-descr {
+        font-size: 0.5rem;
+    }
+}

@@ -1,0 +1,74 @@
+.header {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: .5rem;
+    min-height: 100vh;
+    &-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-img {
+        width: 100%;
+        align-self: center;
+    }
+}
+
+.content-main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    &__title {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+        @media (max-width: 768px) {
+            & {
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    &__descr {
+        @media (max-width: 768px) {
+            font-size: 0.8rem;
+        }
+    }
+
+    &__btn {
+        background-color: #000;
+        text-decoration: none;
+        color: #fff;
+        padding: 1rem 1.5rem;
+        border: none;
+        outline-offset: 2px;
+        font-size: 1rem;
+        border-bottom-left-radius: 25px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        margin-top: 2.5rem;
+        width: fit-content;
+        border: 1px solid transparent;
+        &:focus {
+            outline: 2px solid #000;
+        }
+        span {
+            vertical-align: center;
+        }
+        svg {
+            vertical-align: bottom;
+            display: inline-block;
+            margin-left: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 0.8rem;
+            padding: 0.5rem 1rem;
+            margin-top: 1.5rem;
+            & svg {
+                margin-left: 1rem;
+            }
+        }
+    }
+}

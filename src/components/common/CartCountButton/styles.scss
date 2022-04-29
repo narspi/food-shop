@@ -1,0 +1,38 @@
+.btnCartCount {
+    height: 50px;
+    width: 50px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 15px;
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 1.5rem;
+    right: 1rem;
+    cursor: pointer;
+    svg {
+        transform: rotate(-45deg);
+        font-size: 2rem;
+    }
+
+    &__number {
+        position: absolute;
+        top: -8px;
+        left: -9px;
+        background-color: red;
+        transform: rotate(-45deg);
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        font-size: 0.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media (min-width: 1921px) {
+        right: calc((100vw - 1200px) / 2);
+    }
+}

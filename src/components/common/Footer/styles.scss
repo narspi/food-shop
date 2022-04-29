@@ -1,0 +1,18 @@
+.footer {
+    border-top: 1px solid #000;
+    margin-top: 3rem;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__descr {
+        font-weight: 500;
+        max-width: 650px;
+        margin-right: 0.5rem;
+    }
+    @media (max-width: 600px) {
+        &__descr {
+            font-size: 0.8rem;
+        }
+    }
+}

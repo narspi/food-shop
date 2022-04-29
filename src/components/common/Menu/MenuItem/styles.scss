@@ -1,0 +1,46 @@
+.item {
+    max-width: 150px;
+    padding: 0 0.8rem 0.8rem 0.8rem;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    &-img {
+        margin: -3.5rem auto 0;
+        height: 130px;
+        object-fit: contain;
+    }
+
+    &-head__descr {
+        text-align-last: left;
+        flex: 1;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        & p {
+            margin: 0 0 0.5rem 0;
+            font-size: 0.9rem;
+        }
+    }
+
+    &-head__descr-name {
+        font-weight: 600;
+        text-transform: capitalize;
+        flex: 1;
+    }
+
+    &-head__descr-info {
+        color: #a0a0a0;
+    }
+
+    &-footer__descr {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-footer__descr-price {
+        font-weight: 700;
+    }
+}

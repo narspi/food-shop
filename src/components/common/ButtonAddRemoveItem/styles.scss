@@ -1,0 +1,57 @@
+.btnAddRemove {
+    background-color: #000;
+    border-radius: 100px;
+    overflow: hidden;
+    width: 60px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__negative {
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        padding: .3rem;
+        width: 100%;
+        &-text {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 0.6rem;
+            line-height: 1;
+            padding: 0 0.3rem;
+            font-weight: 700;
+        }
+
+        &-icon {
+            display: inline-block;
+            padding-right: .3rem;
+            font-size: 0rem;
+            line-height: 0;
+            svg {
+                font-size: 0.6rem;
+            }
+        }
+    }
+
+    &__positive {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.3rem;
+        &-minus,&-plus {
+            background-color: transparent;
+            border: none;
+            color: #fff;
+            font-size: 0;
+            svg {
+                font-size: 0.6rem;
+            }
+        }
+
+        &-text {
+            color: #fff;
+            font-size: 0.8rem;
+        }
+    }
+}

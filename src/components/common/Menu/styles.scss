@@ -1,0 +1,19 @@
+.main {
+    padding-top: 3.5rem;
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    justify-items: center;
+    grid-row-gap: 5rem;
+    @media (max-width: 935px) {
+        grid-template-columns: repeat(4,25%);
+    }
+    @media (max-width: 735px) {
+        grid-template-columns: repeat(3,33.33%);
+    }
+    @media (max-width: 535px) {
+        grid-template-columns: repeat(2,50%);
+    }
+    @media (max-width: 335px) {
+        grid-template-columns: 100%;
+    }
+}
